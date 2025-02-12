@@ -1,4 +1,10 @@
 body, html {
     font-family: OPPOSans-Ver3-Regular, Helvetica, Arial, sans-serif, system-ui;
+    font-size: 14px;
 }
 
+input {
+    &:focus {
+        outline: none;
+    }
+}
