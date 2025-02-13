@@ -1,0 +1,17 @@
+// navbar
+.navbar-fixed {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 101;
+}
+
+
+// ksp-img
+.ksp-card {
+    img {
+        transform-origin: top;
+        transform: scale(1.1);
+    }
+}

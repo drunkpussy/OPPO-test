@@ -10,7 +10,7 @@
 		<div id="app">
 		
 			<!-- Header Main PC -->
-			<div class="header-main-pc w-full h-[52px] pl-16 pr-16 border-b-1 border-[#e5e5e5] flex items-center justify-between text-[#0000008c]">
+			<div class="header-main-pc w-full h-[52px] pl-[64px] pr-[64px] border-b-1 border-[#e5e5e5] flex items-center justify-between text-[#0000008c]">
 				<div class="flex items-center">
 					<a href="" class="mr-[26px]">
 						<svg xmlns="http://www.w3.org/2000/svg" width="85" height="22" viewBox="0 0 85 22" fill="none">
@@ -63,41 +63,137 @@
 				</div>
 			</div>
 
-			<div class="navbar-pc w-full pl-16 pr-16 flex items-center justify-between h-[48px] border-b-1 border-[#e5e5e5]">
-				<div class="flex justify-items-center items-center text-[#0000004d] text-[16px]">
-					<div class="flex items-center mr-3 text-[#000000f2]">Reno13 Pro</div>
-					<div class="w-[1px] h-4 bg-[#dcdcdc]"></div>
-					<div class="flex items-center ml-3">Reno13</div>
+			<div class="w-full h-[48px]">
+				<div id="navbar-pc" class="navbar-pc w-full pl-[64px] pr-[64px] bg-[#ffffff] flex items-center justify-between h-[48px] border-b-1 border-[#e5e5e5]">
+					<div class="flex justify-items-center items-center text-[#0000004d] text-[16px]">
+						<div class="flex items-center pr-[12px] text-[#000000f2]">Reno13 Pro</div>
+						<div class="w-[1px] h-4 bg-[#dcdcdc]"></div>
+						<div class="flex items-center pl-[12px]">Reno13</div>
+					</div>
+
+					<div class="justify-end flex items-center">
+						<div class="px-[7px] py-3 flex items-center">
+							<div class="mr-[6px]">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M10.149 0.308804C10.1112 0.217404 10.0471 0.139277 9.96485 0.0843089C9.88261 0.0293403 9.78592 0 9.687 0C9.58808 0 9.49139 0.0293403 9.40915 0.0843089C9.32691 0.139277 9.26283 0.217404 9.225 0.308804L8.497 2.0738C8.44941 2.18979 8.3793 2.2952 8.29073 2.38394C8.20217 2.47268 8.0969 2.54298 7.981 2.5908L6.215 3.3178C6.12329 3.35547 6.04486 3.41956 5.98966 3.50191C5.93446 3.58426 5.90498 3.68116 5.90498 3.7803C5.90498 3.87944 5.93446 3.97635 5.98966 4.0587C6.04486 4.14105 6.12329 4.20513 6.215 4.2428L7.981 4.9698C8.09687 5.01767 8.20211 5.088 8.29068 5.17673C8.37924 5.26546 8.44936 5.37084 8.497 5.4868L9.225 7.2518C9.26283 7.3432 9.32691 7.42133 9.40915 7.4763C9.49139 7.53127 9.58808 7.56061 9.687 7.56061C9.78592 7.56061 9.88261 7.53127 9.96485 7.4763C10.0471 7.42133 10.1112 7.3432 10.149 7.2518L10.877 5.4868C10.9246 5.37084 10.9948 5.26546 11.0833 5.17673C11.1719 5.088 11.2771 5.01767 11.393 4.9698L13.159 4.2428C13.2507 4.20513 13.3291 4.14105 13.3843 4.0587C13.4395 3.97635 13.469 3.87944 13.469 3.7803C13.469 3.68116 13.4395 3.58426 13.3843 3.50191C13.3291 3.41956 13.2507 3.35547 13.159 3.3178L11.393 2.5908C11.2772 2.54289 11.1719 2.47255 11.0834 2.38382C10.9948 2.29509 10.9247 2.18973 10.877 2.0738L10.149 0.308804ZM9.422 2.4548L9.687 1.8118L9.952 2.4548C10.0501 2.69265 10.1942 2.90875 10.3761 3.09067C10.558 3.27259 10.7742 3.41674 11.012 3.5148L11.656 3.7808L11.013 4.0458C10.7751 4.14382 10.559 4.28795 10.3771 4.46988C10.1951 4.6518 10.051 4.86793 9.953 5.1058L9.687 5.7498L9.422 5.1058C9.32398 4.86793 9.17985 4.6518 8.99793 4.46988C8.816 4.28795 8.59988 4.14382 8.362 4.0458L7.718 3.7808L8.362 3.5158C8.59988 3.41778 8.816 3.27366 8.99793 3.09173C9.17985 2.90981 9.32398 2.69268 9.422 2.4548ZM1.045 2.3578C1.075 2.3278 1.115 2.3118 1.155 2.3118H5.75V1.3118H1.156C0.84941 1.3118 0.555376 1.4336 0.338584 1.65039C0.121792 1.86718 0 2.16121 0 2.4678V13.4678H11C11.3066 13.4678 11.6006 13.346 11.8174 13.1292C12.0342 12.9124 12.156 12.6184 12.156 12.3118V7.7178H11.156V12.3118C11.156 12.3532 11.1396 12.3929 11.1103 12.4221C11.0811 12.4514 11.0414 12.4678 11 12.4678H1V2.4678C1 2.4268 1.016 2.3868 1.045 2.3578Z" fill="black" fill-opacity="0.85"/>
+								</svg>
+							</div>
+							<div>
+								概览
+							</div>
+						</div>
+						<div class="text-[#000000bf] px-[7px] py-3  flex items-center cursor-pointer">
+							<div class="mr-[6px]">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M2.625 10.5V0H3.375V10.5H2.625ZM0 6.562V2.626H0.75V6.563L0 6.562ZM5.25 2.625V9.187H6V2.626L5.25 2.625ZM7.875 11.812V1.312H8.625V11.812H7.875ZM10.5 5.25V9.187H11.25V5.25H10.5Z" fill="black" fill-opacity="0.75"/>
+								</svg>
+							</div>
+							<div>
+								参数
+							</div>
+						</div>
+						<div class="ml-[20px] py-[7px] px-[20px] rounded-[36px] bg-[#2cff73] cursor-pointer">立即购买</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="zn--wrapper relative">
+				<div class="w-screen sticky top-[48px] h-[var(--content-height)]">
+					<img class="overflow-clip w-full h-full left-0 absolute max-w-none object-cover" src="./src/assets/images/images-kv-bg-1.png.png" alt="" srcset="">
+					<div class="mask-1 absolute size-full h-[calc(100%+1px)] left-0 -top-px opacity-0 bg-[#000000f2] object-fill"></div>
 				</div>
 
-				<div class="justify-end flex items-center">
-					<div class="px-[7px] py-3 flex items-center">
-						<div class="mr-[6px]">
-							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.149 0.308804C10.1112 0.217404 10.0471 0.139277 9.96485 0.0843089C9.88261 0.0293403 9.78592 0 9.687 0C9.58808 0 9.49139 0.0293403 9.40915 0.0843089C9.32691 0.139277 9.26283 0.217404 9.225 0.308804L8.497 2.0738C8.44941 2.18979 8.3793 2.2952 8.29073 2.38394C8.20217 2.47268 8.0969 2.54298 7.981 2.5908L6.215 3.3178C6.12329 3.35547 6.04486 3.41956 5.98966 3.50191C5.93446 3.58426 5.90498 3.68116 5.90498 3.7803C5.90498 3.87944 5.93446 3.97635 5.98966 4.0587C6.04486 4.14105 6.12329 4.20513 6.215 4.2428L7.981 4.9698C8.09687 5.01767 8.20211 5.088 8.29068 5.17673C8.37924 5.26546 8.44936 5.37084 8.497 5.4868L9.225 7.2518C9.26283 7.3432 9.32691 7.42133 9.40915 7.4763C9.49139 7.53127 9.58808 7.56061 9.687 7.56061C9.78592 7.56061 9.88261 7.53127 9.96485 7.4763C10.0471 7.42133 10.1112 7.3432 10.149 7.2518L10.877 5.4868C10.9246 5.37084 10.9948 5.26546 11.0833 5.17673C11.1719 5.088 11.2771 5.01767 11.393 4.9698L13.159 4.2428C13.2507 4.20513 13.3291 4.14105 13.3843 4.0587C13.4395 3.97635 13.469 3.87944 13.469 3.7803C13.469 3.68116 13.4395 3.58426 13.3843 3.50191C13.3291 3.41956 13.2507 3.35547 13.159 3.3178L11.393 2.5908C11.2772 2.54289 11.1719 2.47255 11.0834 2.38382C10.9948 2.29509 10.9247 2.18973 10.877 2.0738L10.149 0.308804ZM9.422 2.4548L9.687 1.8118L9.952 2.4548C10.0501 2.69265 10.1942 2.90875 10.3761 3.09067C10.558 3.27259 10.7742 3.41674 11.012 3.5148L11.656 3.7808L11.013 4.0458C10.7751 4.14382 10.559 4.28795 10.3771 4.46988C10.1951 4.6518 10.051 4.86793 9.953 5.1058L9.687 5.7498L9.422 5.1058C9.32398 4.86793 9.17985 4.6518 8.99793 4.46988C8.816 4.28795 8.59988 4.14382 8.362 4.0458L7.718 3.7808L8.362 3.5158C8.59988 3.41778 8.816 3.27366 8.99793 3.09173C9.17985 2.90981 9.32398 2.69268 9.422 2.4548ZM1.045 2.3578C1.075 2.3278 1.115 2.3118 1.155 2.3118H5.75V1.3118H1.156C0.84941 1.3118 0.555376 1.4336 0.338584 1.65039C0.121792 1.86718 0 2.16121 0 2.4678V13.4678H11C11.3066 13.4678 11.6006 13.346 11.8174 13.1292C12.0342 12.9124 12.156 12.6184 12.156 12.3118V7.7178H11.156V12.3118C11.156 12.3532 11.1396 12.3929 11.1103 12.4221C11.0811 12.4514 11.0414 12.4678 11 12.4678H1V2.4678C1 2.4268 1.016 2.3868 1.045 2.3578Z" fill="black" fill-opacity="0.85"/>
-							</svg>
+				
+				<div class="zn--ksp w-screen bg-white text-[rgba(0,0,0,0.95)] relative pt-[80px] pb-[160px] z-1">
+					<div class="mx-auto w-[1312px]">
+						<div class="w-full flex justify-between">
+							<!-- card 1 -->
+							<div class="bg-[#EEECF0] ksp-card h-auto w-[432px] rounded-[16px]">
+								<div class="w-full relative overflow-hidden h-[296px] rounded-[16px]">
+									<img src="./src/assets/images/images-ksp-ksp-1-1.png.png" alt="">
+								</div>
+								<div class="w-full relative p-[16px]">
+									<div class="font-OPPO-medium text-[24px] leading-[32px] tracking-[0.5px]">超美小直屏</div>
+								</div>
+							</div>
+
+							<!-- card 2 -->
+							<div class="bg-[#EEECF0] ksp-card h-auto w-[432px] rounded-[16px]">
+								<div class="w-full relative overflow-hidden h-[296px] rounded-[16px]">
+									<img src="./src/assets/images/images-ksp-ksp-1-1.png.png" alt="">
+								</div>
+								<div class="w-full relative p-[16px]">
+									<div class="font-OPPO-medium text-[24px] leading-[32px] tracking-[0.5px]">AI 高清实况照片</div>
+								</div>
+							</div>
+
+							<!-- card 3 -->
+							<div class="bg-[#EEECF0] ksp-card h-auto w-[432px] rounded-[16px]">
+								<div class="w-full relative overflow-hidden h-[296px] rounded-[16px]">
+									<img src="./src/assets/images/images-ksp-ksp-1-1.png.png" alt="">
+								</div>
+								<div class="w-full relative p-[16px]">
+									<div class="font-OPPO-medium text-[24px] leading-[32px] tracking-[0.5px]">双芯抢网</div>
+								</div>
+							</div>
 						</div>
-						<div>
-							概览
+						<div class="w-full flex justify-between mt-[8px]">
+							<!-- card 4 -->
+							<div class="bg-[#EEECF0] ksp-card h-auto w-[432px] rounded-[16px]">
+								<div class="w-full relative overflow-hidden h-[296px] rounded-[16px]">
+									<img src="./src/assets/images/images-ksp-ksp-1-1.png.png" alt="">
+								</div>
+								<div class="w-full relative p-[16px]">
+									<div class="font-OPPO-medium text-[24px] leading-[32px] tracking-[0.5px]">IP69 满级防水</div>
+								</div>
+							</div>
+
+							<!-- card 5 -->
+							<div class="bg-[#EEECF0] ksp-card h-auto w-[432px] rounded-[16px]">
+								<div class="w-full relative overflow-hidden h-[296px] rounded-[16px]">
+									<img src="./src/assets/images/images-ksp-ksp-1-1.png.png" alt="">
+								</div>
+								<div class="w-full relative p-[16px]">
+									<div class="font-OPPO-medium text-[24px] leading-[32px] tracking-[0.5px]">长焦小舞台神器</div>
+								</div>
+							</div>
+
+							<!-- card 6 -->
+							<div class="bg-[#EEECF0] ksp-card h-auto w-[432px] rounded-[16px]">
+								<div class="w-full relative overflow-hidden h-[296px] rounded-[16px]">
+									<img src="./src/assets/images/images-ksp-ksp-1-1.png.png" alt="">
+								</div>
+								<div class="w-full relative p-[16px]">
+									<div class="font-OPPO-medium text-[24px] leading-[32px] tracking-[0.5px]">50W 无线充电</div>
+								</div>
+							</div>
+
+
 						</div>
 					</div>
-					<div class="text-[#000000bf] px-[7px] py-3  flex items-center">
-						<div class="mr-[6px]">
-							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.625 10.5V0H3.375V10.5H2.625ZM0 6.562V2.626H0.75V6.563L0 6.562ZM5.25 2.625V9.187H6V2.626L5.25 2.625ZM7.875 11.812V1.312H8.625V11.812H7.875ZM10.5 5.25V9.187H11.25V5.25H10.5Z" fill="black" fill-opacity="0.75"/>
-							</svg>
-						</div>
-						<div>
-							参数
-						</div>
-					</div>
-					<div class="ml-5 px-[7px] py-5">立即购买</div>
+					<div class="mask-2 absolute size-full h-[calc(100%+1px)] left-0 -top-px opacity-0 bg-[#000000f2] object-fill"></div>
 				</div>
+
+				<div class="zn--design w-screen relative text-[rgba(255,255,255,0.95)] z-2">
+					<div class="absolute left-0 top-0 size-full rounded-t-[80px] bg-black object-cover"></div>
+					<div class="relative w-full h-[76.389vw] pt-[12.78vw] overflow-hidden">
+						<div class="absolute left-0 top-0 size-full rounded-t-[80px] bg-black object-cover">
+							<img class="rounded-t-[80px]" src="./src/assets/images/images-design-bg-purple-1.png.png" alt="">
+						</div>
+						<div class="relative mx-auto font-OPPO-medium text-[68px] leading-[76px] w-[1312px] text-center">
+							超美小直屏
+							<br>
+							这么美，还那么强
+						</div>
+					</div>
+
+				</div>
+
 
 			</div>
 
-
-
+				
 		</div>
     	<script type="module" src="/src/main.js"></script>
   	</body>
