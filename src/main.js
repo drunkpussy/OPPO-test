@@ -29,8 +29,8 @@ let tl = gsap.timeline({scrollTrigger: {
     // markers: true,
     // pin: true,
     onUpdate: (self) => {
-        // console.log(self.progress);
-        $('.mask-1').css('opacity', self.progress * 2);
+        console.log(self.progress);
+        $('.mask-1').css('opacity', self.progress);
     },
     onLeave: () => {
         $('.mask-1').css('opacity', 0);
@@ -45,12 +45,33 @@ let tl2 = gsap.timeline({scrollTrigger: {
     // markers: true,
     // pin: true,
     onUpdate: (self) => {
-        console.log(self.progress);
+        // console.log(self.progress);
         $('.zn--ksp').css('transform',  `translateY(${self.progress * 250}px)`);
-        $('.mask-2').css('opacity', self.progress * 2);
+        $('.mask-2').css('opacity', self.progress * 1.5);
     },
     onLeave: () => {
         // console.log('onLeave');
         $('.mask-2').css('opacity', 0);
+    },
+}});
+
+// test section
+let tl3 = gsap.timeline({scrollTrigger: {
+    trigger: '.test-part',
+    start: '00% 10%',
+    end: '91% 95%',
+    // markers: true,
+    // pin: true,
+    onUpdate: (self) => {
+        // console.log(self.progress);
+        // $('.zn--ksp').css('transform',  `translateY(${self.progress * 250}px)`);
+        // $('.mask-2').css('opacity', self.progress * 1.5);
+        $('.design-mask').css('transform', `scale(${self.progress * 1.25 + 1})`);
+        $('.design-bg').css('transform', `scale(${ 0.75 + (1 - self.progress) * 0.25})`);
+        $('.design-container').css('clip-path', `inset(34.56% 27.36% 7.27% round ${48 - 40 * (self.progress)}px)`);
+    },
+    onLeave: () => {
+        // console.log('onLeave');
+        // $('.mask-2').css('opacity', 0);
     },
 }});

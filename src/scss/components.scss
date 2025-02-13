@@ -15,3 +15,14 @@
         transform: scale(1.1);
     }
 }
+
+// bg-img 
+.bg-img {
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
