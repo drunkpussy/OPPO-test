@@ -10,10 +10,73 @@
 
 // ksp-img
 .ksp-card {
+
+    transition: all 0.4s ease;
+    overflow: hidden;
+
+    .img-wrapper {
+        clip-path: inset(0 0 0 0 round -moz-calc(var(--rpx, 1px)* 16));
+        clip-path: inset(0 0 0 0 round calc(var(--rpx, 1px)* 16));
+        -webkit-clip-path: inset(0 0 0 0 round -webkit-calc(var(--rpx, 1px)* 16));
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        transition: all 0.4s ease;
+    }   
+
     img {
         transform-origin: top;
         transform: scale(1.1);
+        transform-origin: top;
+        transition: all 0.4s ease;
     }
+
+    .text-wrapper {
+        -webkit-transition: -webkit-transform .4s ease;
+        transition: -webkit-transform .4s ease;
+        -moz-transition: transform .4s ease, -moz-transform .4s ease;
+        transition: transform .4s ease;
+        transition: transform .4s ease, -webkit-transform .4sease, -moz-transform .4sease;
+        transform: translateY(0);
+    }
+
+    .desc-text {
+        opacity: 0;
+        transform: translateY(12px);
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        transition: all 0.4s ease;
+    }
+
+    &:hover {
+        .img-wrapper {
+            -webkit-clip-path: inset(-webkit-calc(var(--rpx, 1px)* 8) -webkit-calc(var(--rpx, 1px)* 8) 76px -webkit-calc(var(--rpx, 1px)* 8) round -webkit-calc(var(--rpx, 1px)* 16));
+            clip-path: inset(-moz-calc(var(--rpx, 1px)* 8) -moz-calc(var(--rpx, 1px)* 8) 76px -moz-calc(var(--rpx, 1px)* 8) round -moz-calc(var(--rpx, 1px)* 16));
+            clip-path: inset(calc(var(--rpx, 1px)* 8) calc(var(--rpx, 1px)* 8) 76px calc(var(--rpx, 1px)* 8) round calc(var(--rpx, 1px)* 16));
+            transition: all 0.4s ease;
+        }
+
+        img {
+            transform: scale(1) translateY(-30px);
+        }
+
+        .text-wrapper {
+            transform: translateY(-76px);
+        }
+
+        .desc-text {
+            opacity: 1;
+            transform: translateY(0);
+        }        
+    }
+
+    .arrow-img {
+        visibility: hidden;
+    }
+}
+
+// design img
+[class^="design-img"] {
+    transform: scale(1.15);
 }
 
 // bg-img 
