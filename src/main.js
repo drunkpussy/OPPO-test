@@ -138,3 +138,11 @@ let tl7 = gsap.timeline({scrollTrigger: {
         // console.log('onLeave');
     },
 }});
+
+// // cursor
+// const cursor = document.querySelector('.arrow');
+// document.addEventListener('mousemove', ( e ) => {
+//     console.log(cursor);
+    
+//     cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
+// });
